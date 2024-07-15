@@ -30,12 +30,14 @@ def main():
 
     # Perform histogram equalization, blurring, and sharpening
     equalized_image = enhancer.histogram_equalization()
+
     blurred_image = enhancer.blur_image()
     sharpened_image = enhancer.sharpen_image()
 
     # Display enhanced images
     processor.display_image(enhancer.gray_image, 'Gray Image')
     processor.display_image(equalized_image, 'Equalized Image')
+    enhancer.plot_histograms(equalized_image)
     processor.display_image(blurred_image, 'Blurred Image')
     processor.display_image(sharpened_image, 'Sharpened Image')
 
