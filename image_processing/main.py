@@ -9,7 +9,7 @@ from face_detector import FaceDetector
 
 def main():
     # Initialize the ImageProcessor with an example image
-    image_path = 'C:/Users/thein/OneDrive/Desktop/yolov8/data_cap/runs/detect/predict/image_058.jpg'
+    image_path = 'image.png'
     processor = ImageProcessor(image_path)
 
     # Display the original image
